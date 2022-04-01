@@ -18,4 +18,4 @@ spec:
     spec:
       containers:
         - name: helloworld
-          image: joaopedropp/helloworld
+          image: __IMAGE__
