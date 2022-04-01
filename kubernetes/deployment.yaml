@@ -1,0 +1,21 @@
+apiVersion:  apps/v1
+kind: Deployment
+metadata:
+  namespace: default
+  name: helloworld
+  labels:
+    app: helloworld
+spec:
+  selector:
+    matchLabels:
+      app: helloworld
+  template:
+    metadata:
+      namespace: default
+      name: helloworld
+      labels:
+        app: helloworld
+    spec:
+      containers:
+        - name: helloworld
+          image: joaopedropp/helloworld
